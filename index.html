@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Adwaith S</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Adwaith S</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="profile_pic">
+            <img src="./assets/portrait1.jpg" alt="Adwaith S" height="400px" width="300px">
+        </div>
+
+
+     <div class="section-container">     
+        <div class="profile_desc">
+            <p class="p1">Hi, I'm </p>
+            <h1 class="h1">Adwaith S</h1>
+            <p class="p2">Java Developer</p>
+        </div>
+
+        <div class="button-container">
+            <button id="btn" onclick="window.open('./assets/Resume_Adwaith.pdf')">Resume</button>
+            <button id="btn" onclick="location.href='./#Contact'" >Contact</button>
+        </div>
+<div class="socials-container">
+        <div class="socials">
+            <img src="./assets/linkedin.png" onclick="location.href='//www.linkedin.com/in/adwaiths22/'">
+
+            <img src="./assets/github.png" onclick="location.href='//github.com/AdwaithS22'">
+        </div>
+</div>
+    </div>
+    </section>
+
+
+    <section id="Projects">
+        <div class="section-container">
+            
+            <div class="profile_desc">
+                <h2 >Projects</h2>
+
+                <button id="button" onclick="location.href='//github.com/AdwaithS22/deride'">De Ride</button>
+                <p class="p1">A decentralized Ride-Hailing platform using Blockchain.</p>
+
+                <button id="button" >Vector Service Management</button>
+                <p class="p1">A service Management system using Java, JSP and JDBC.</p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <div class="contacts-container">
+            <div class="contacts">
+                <h2>Contacts</h2>
+                <div class="phone">
+                    <img src="./assets/phone.png">
+                    <p class="p3">7907206603</p>
+                </div>
+
+                <div class="email">
+                    <img src="./assets/email.png">
+                    <p class="p3">adwaiths2019@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
